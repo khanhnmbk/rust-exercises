@@ -14,3 +14,7 @@ path = "src/shape/bin/main.rs"
 [[bin]]
 name = "url_matcher"
 path = "src/url_matcher/bin/main.rs"
+
+[[bin]]
+name = "gui_library"
+path = "src/gui_library/bin/main.rs"
