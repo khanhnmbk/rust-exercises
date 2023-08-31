@@ -18,3 +18,7 @@ path = "src/url_matcher/bin/main.rs"
 [[bin]]
 name = "gui_library"
 path = "src/gui_library/bin/main.rs"
+
+[[bin]]
+name = "polygon"
+path = "src/polygon/bin/main.rs"
