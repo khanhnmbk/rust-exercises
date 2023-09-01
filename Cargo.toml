@@ -22,3 +22,7 @@ path = "src/gui_library/bin/main.rs"
 [[bin]]
 name = "polygon"
 path = "src/polygon/bin/main.rs"
+
+[[bin]]
+name = "ffi_wrapper"
+path = "src/ffi_wrapper/bin/main.rs"
