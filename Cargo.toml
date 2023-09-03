@@ -6,6 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+reqwest = { version = "0.11.20", features = ["blocking", "rustls-tls"] }
+scraper = "0.17.1"
+thiserror = "1.0.48"
 
 [[bin]]
 name = "shape"
@@ -30,3 +33,7 @@ path = "src/ffi_wrapper/bin/main.rs"
 [[bin]]
 name = "dining_philosophers"
 path = "src/dining_philosophers/bin/main.rs"
+
+[[bin]]
+name = "link_checkers"
+path = "src/link_checkers/bin/main.rs"
