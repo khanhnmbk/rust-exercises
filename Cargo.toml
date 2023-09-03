@@ -26,3 +26,7 @@ path = "src/polygon/bin/main.rs"
 [[bin]]
 name = "ffi_wrapper"
 path = "src/ffi_wrapper/bin/main.rs"
+
+[[bin]]
+name = "dining_philosophers"
+path = "src/dining_philosophers/bin/main.rs"
