@@ -6,10 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+futures-util = { version = "0.3.28", features = ["sink"] }
+http = "0.2.9"
 reqwest = { version = "0.11.20", features = ["blocking", "rustls-tls"] }
 scraper = "0.17.1"
 thiserror = "1.0.48"
 tokio = { version = "1.32.0", features = ["full"] }
+tokio-websockets = { version = "0.4.0", features = ["server", "sha1_smol", "client", "fastrand"] }
 
 [[bin]]
 name = "shape"
@@ -42,3 +45,11 @@ path = "src/link_checkers/bin/main.rs"
 [[bin]]
 name = "dining_philosophers_async"
 path = "src/dining_philosophers_async/bin/main.rs"
+
+[[bin]]
+name = "chat_app_server"
+path = "src/chat_app/bin/server.rs"
+
+[[bin]]
+name = "chat_app_client"
+path = "src/chat_app/bin/client.rs"
