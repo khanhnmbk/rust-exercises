@@ -9,6 +9,7 @@ edition = "2021"
 reqwest = { version = "0.11.20", features = ["blocking", "rustls-tls"] }
 scraper = "0.17.1"
 thiserror = "1.0.48"
+tokio = { version = "1.32.0", features = ["full"] }
 
 [[bin]]
 name = "shape"
@@ -37,3 +38,7 @@ path = "src/dining_philosophers/bin/main.rs"
 [[bin]]
 name = "link_checkers"
 path = "src/link_checkers/bin/main.rs"
+
+[[bin]]
+name = "dining_philosophers_async"
+path = "src/dining_philosophers_async/bin/main.rs"
